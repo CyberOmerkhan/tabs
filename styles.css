@@ -1,0 +1,16 @@
+button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: grey;
+    color: #fff;
+}
+button.active{
+    background-color: lightskyblue;
+}
+div.active{
+    display: block;
+}
+.tabs_item1, .tabs_item2, .tabs_item3{
+    display: none;
+}
