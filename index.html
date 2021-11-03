@@ -10,12 +10,12 @@
 <body>
     <div class="tabs">
         <div class="tabs_nav">
-            <button class = "tabs_nav-btn active" type = "button"  id = "button1">Tab 1</button>
-            <button class = "tabs_nav-btn" type = "button" id = "button2">Tab 2</button>
-            <button class = "tabs_nav-btn" type = "button" id = "button3">Tab 3</button>
+            <button class = "tabs_nav-btn active" type = "button"  id = "button1" data-tab="#tab_1">Tab 1</button>
+            <button class = "tabs_nav-btn" type = "button" id = "button2" data-tab="#tab_2">Tab 2</button>
+            <button class = "tabs_nav-btn" type = "button" id = "button3" data-tab="#tab_3">Tab 3</button>
         </div>
         <div class="tabs_content">
-            <div class="tabs_item1 active">
+            <div class="tabs_item active" id = "tab_1">
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
                     Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
@@ -26,7 +26,7 @@
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
             </div>
-            <div class="tabs_item2">
+            <div class="tabs_item" id = "tab_2">
                 <p>
                     It is a long established fact that a reader will be distracted by the readable content
                     of a page when looking at its layout. The point of using Lorem Ipsum is that it has a 
@@ -37,7 +37,7 @@
                     sometimes on purpose (injected humour and the like).
                 </p>
             </div>
-            <div class="tabs_item3">
+            <div class="tabs_item" id = "tab_3">
                 <p>
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some 
                     form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
