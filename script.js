@@ -1,17 +1,18 @@
-const tabsBtn = document.querySelectorAll('.tabs_nav-btn');
-const tabsItems = document.querySelectorAll('.tabs_item');
-tabsBtn.forEach(function(item){
-    item.addEventListener('click', function(){
+const tabsBtn = document.querySelectorAll('button');
+const tabsItem = document.querySelectorAll('.tabs_item');
+tabsBtn.forEach(item => {
+    item.addEventListener('click', () => {
         let currentBtn = item;
-        let btnID = currentBtn.getAttribute('data-tab');
-        let currentItem = document.querySelector(btnID);
-        tabsBtn.forEach(function(item){
+        let dataTab = currentBtn.getAttribute('data-tab');
+        let currentItem = document.querySelector(dataTab);
+        tabsBtn.forEach(item => {
             item.classList.remove('active');
         });
-        tabsItems.forEach(function(item){
+        tabsItem.forEach(item => {
             item.classList.remove('active');
         });
-        currentBtn.classList.add('active');
         currentItem.classList.add('active');
+        currentBtn.classList.add('active');
+
     })
-});
+})

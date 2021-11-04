@@ -27,7 +27,7 @@ button.active{
     display: none;
     line-height: 1.7em;
     color: #fefefe;
-    padding: 6px;
+    padding: 7px;
 }
 .tabs_item.active{
     display: block;
